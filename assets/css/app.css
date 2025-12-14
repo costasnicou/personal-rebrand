@@ -1,0 +1,28 @@
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px; }
+
+.site-header {
+  background-color: rgba(207, 9, 3, 0.72); }
+  .site-header .main-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0; }
+    .site-header .main-menu .list-item {
+      margin: 30px; }
+      .site-header .main-menu .list-item .link-item:link, .site-header .main-menu .list-item .link-item:visited {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        transition: all .3s; }
+      .site-header .main-menu .list-item .link-item:hover {
+        color: #ff7300; }
+
+.cover {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh; }
+
+/*# sourceMappingURL=app.css.map */
