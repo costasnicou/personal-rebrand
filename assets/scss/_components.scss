@@ -1,42 +1,19 @@
+.btn-secondary:link,.btn-secondary:visited{
+    display: inline-block;
+    color: white;
+    background-color: rgb(255, 127, 47);
+    padding: 10px 30px;
+    // position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-15%);
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all .3s;
 
-.site-header{
-    // height: 40px;
-    background-color: rgba(207, 9, 3, 0.72);
-
-
-    // .top-bar{
-    //     height: 100px;
-    //     background-color: rgb(29, 29, 29);
-    // }
-
-    .main-menu{
-
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        margin: 0;
-        // border-bottom:2px solid orangered;;
-        .list-item{
-
-            margin: 30px;
-
-            .link-item:link,.link-item:visited{
-                text-decoration: none;
-                color: white;
-                font-size:2rem;
-                transition: all .3s;
-
-
-            }
-
-            .link-item{
-                &:hover{
-                    color: rgb(255, 115, 0);
-                }
-            }
-        }
-
-
+    &:hover{
+        background-color: darken(rgb(255, 127, 47),5%);
     }
-}
 
+}
