@@ -50,7 +50,7 @@
 }
 
 .budges{
-    width: 60%;
+    width: 70%;
     height: 180px;
     margin: 0 auto;
     background-color: rgb(255, 127, 47);
@@ -71,15 +71,17 @@
     -moz-box-shadow: -1px 2px 178px -45px rgba(112,112,112,0.86);
     text-align: center;
     .budge{
-        padding: 10px;
+        padding: 0;
         text-align: center;
         display: flex;
         align-items: center;
+        justify-content: center;
         // flex-shrink: 0;
         // flex-grow: 0;
+        // border-left: 1px solid white;
         flex-basis: 33%;
         
-        justify-content: center;
+        justify-content: space-evenly;
         .icon-wraper{
             background-color: white;
             width: 125px; /* adjust to control the size */
@@ -133,6 +135,8 @@
             p{
                 font-size: 4rem;
                 line-height: 4rem;
+                width: 80%;
+                margin: 0 auto 20px auto;
                 span{
                     // line-height: 5rem
                     // top:5px;
@@ -141,7 +145,7 @@
             }
         }
 
-        &>*{
+        & > *{
             margin: 10px;
         }
       
@@ -203,7 +207,7 @@
     &__right{
         width: 45%;
         align-self: center;
-
+        text-align: left;
         h3,h4{
             margin-top: 0;
              font-weight: 300;
@@ -263,6 +267,7 @@
 .services{
     text-align: center;
     background-color: rgb(251, 249, 249);
+    padding: 4rem 0 4rem 0;
     h3{
         font-size: 3rem;
         margin-bottom: 0;
@@ -329,5 +334,241 @@
     &__par{
         font-size: 1.6rem;
         color: $color-grey-light;
+    }
+
+    &__view-more{
+        margin-top: 5rem;
+    }
+}
+
+.workflow{
+    // background-color: black;
+    // height: 60rem;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../imgs/workflow.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0 8rem 0;
+    text-align: center;/* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h3{
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+        display: inline-block;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+      
+    }
+
+    &__wraper{
+        display: flex;
+        justify-content: center;
+        // position: relative;
+        align-items: center;
+        margin-top: 4rem;
+        width: 100%;
+        & > workflow__step{
+            margin:3rem 12rem;
+        }
+
+        .separator{
+            border-bottom: 3px dotted white;
+            width: 10%;
+            margin: 0 2rem;
+            position: relative;
+            align-self:center;
+            // transform: translateY(-50%);
+        }
+
+    }
+
+    &__step{
+        width: 300px;
+        color: white;
+        padding: 4rem;
+        border: 3px dotted white;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: rgba(rgb(13, 19, 39),.6);
+        transition: all 1s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+        .step-number-wraper{
+            background-color: white;
+            width: 100px; /* adjust to control the size */
+            aspect-ratio: 1;
+            clip-path: shape(from 97.28% 45.28%,curve to 97.28% 54.72% with 100% 50%,line to 77.72% 88.58%,curve to 69.55% 93.3% with 75% 93.3%,line to 30.45% 93.3%,curve to 22.28% 88.58% with 25% 93.3%,line to 2.72% 54.72%,curve to 2.72% 45.28% with 0% 50%,line to 22.28% 11.42%,curve to 30.45% 6.7% with 25% 6.7%,line to 69.55% 6.7%,curve to 77.72% 11.42% with 75% 6.7%);
+            position: relative;
+            flex-shrink: 0;
+
+            p{
+                color: black;
+                font-size: 5rem;
+                position: absolute;
+                top: 2%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                
+            }
+        }
+
+        .step-content{
+            h4{
+                font-size: 2rem;
+                border-bottom: 2px dotted white;
+                padding-bottom: 5px;
+                display: inline-block;
+            }
+
+            p{
+             font-size: 1.5rem;
+             font-weight: bold;
+            }
+        }
+
+    }
+
+    &__step--1{
+        // align-self: flex-start;
+        // align-self: stretch;
+        // background-color: $color-secondary;
+    }
+}
+
+.blog{
+    // height: 60rem;
+    text-align: center;
+    // background-color: rgb(248, 252, 253);
+    h3{
+        font-size: $main-heading-size;
+        margin-bottom: 0;
+    }
+
+    &__intro{
+        font-size: 1.6rem;
+        width: 50%;
+        margin: 1.5rem auto;
+        font-weight: 300;
+    }
+
+    &__grid{
+        display: grid;
+        width: 70%;
+        margin: 4rem auto 4rem auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 3rem;
+        grid-row-gap: 2rem;
+        text-align: left;
+        & > *{
+            // border: 1px solid orangered;
+        }
+
+        .post{
+
+        
+            .post-meta{
+                display: flex;
+                justify-content: flex-start;
+                p{
+                    margin-bottom: 0;
+                    font-size: 1.5rem;
+                    color: $color-grey-light;
+                }
+
+                & > p:not(:last-of-type){
+                    margin-right: 10px;
+                }
+            }
+
+            .post-content{
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: center;
+                // align-items: center;
+                h4{
+                    margin: 0;
+                }
+                .featured-star-btn{
+                    align-self: flex-start;
+                    width: 45%;
+                    text-align: center;
+                    
+                }
+
+                .post-btn{
+                    margin: 0;
+                    align-self: flex-start;
+                    width: 45%;
+                }
+            }
+            .post-par{
+                font-size: 1.6rem;
+                width: 100%;
+                // margin-top: 0;
+                // margin-bottom: 2.5px;
+            }
+            
+             
+
+            h4{
+                font-size: 1.8rem;
+                margin: 0;
+            }
+
+           
+        }
+
+
+        .featured-star{
+            grid-row: 1/4;
+            // align-self: center;
+          
+            .post-par{
+                font-size: 1.6rem;
+                width: 90%;
+
+            }
+
+            .featured-star-btn{
+                justify-self: start;
+                
+            }
+        }
+
+        .featured-post{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            
+            .post-content{
+                margin-left: 2rem;
+
+                .post-meta{
+                    display: flex;
+                    justify-content: flex-start;
+
+                    p{
+                        margin: 0;
+                    }
+
+                    & > p:not(:last-of-type){
+                        margin-right: 10px;
+                    }
+                }
+
+              
+            }
+        }
     }
 }

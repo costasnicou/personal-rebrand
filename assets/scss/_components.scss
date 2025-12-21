@@ -17,3 +17,37 @@
     }
 
 }
+
+.btn-secondary-normal:link,.btn-secondary-normal:visited{
+    display: inline-block;
+    color: white;
+    background-color: rgb(255, 127, 47);
+    padding: 10px 30px;
+    // position: absolute
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all .3s;
+
+    &:hover{
+        background-color: darken(rgb(255, 127, 47),5%);
+    }
+
+}
+
+.btn-primary-normal:link,.btn-primary-normal:visited{
+    display: inline-block;
+    color: white;
+    background-color: $color-primary;
+    padding: 10px 30px;
+    // position: absolute
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all .3s;
+    text-align: center;
+    &:hover{
+        background-color: darken($color-primary,5%);
+    }
+
+}

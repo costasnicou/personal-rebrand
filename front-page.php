@@ -59,7 +59,7 @@
 				</div>
 	
 				<div class="icon-explain icon-explain--3">
-					<p>More than 10<br><span>YEARS OF EXPERIENCE</span> </p>
+					<p>MORE THAN 10<br><span>YEARS OF EXPERIENCE</span> </p>
 				</div>
 				<p></p>
 			</div>
@@ -133,17 +133,124 @@
 					<div class="services__service--icon-box">
 						<i class="fa-solid fa-house-laptop"></i>
 					</div>
-					<h4>Remote Support</h4>
+					<h4>Remote IT Support</h4>
 					<p class="services__par">Fast remote IT support to fix software issues, optimize performance, and guide you step-by-step.</p>
 				</div>
+			</div>
+			<a href="" class="btn-secondary services__view-more">View More</a>
+		</section>
 
-				<!-- <div class="services__service">
-					<div class="services__service--icon-box">
+		<section class="workflow">
+			<h3 class="workflow__heading">My Working Cycle</h3>
+			<div class="workflow__wraper">
+				<div class="workflow__step workflow__step--1">
+					<div class="step-number-wraper">
+						<p>1</p>
+					</div>
+
+					<div class="step-content">
+						<h4>Contact Me</h4>
+						<p>Contact me and get a free diagnosis and a clear quotation, usually within 24 hours, so you know exactly what to expect.</p>
+					</div>
+				</div>
+
+				<div class="separator"></div>
+
+				<div class="workflow__step workflow__step--2">
+					<div class="step-number-wraper">
+						<p>2</p>
+					</div>
+
+					<div class="step-content">
+						<h4>Repair</h4>
+						<p>After you contact me, I’ll diagnose the issue remotely if it's possible and complete the repair quickly and professionally.</p>
+					</div>
+				</div>
+
+				<div class="separator"></div>
+
+				<div class="workflow__step workflow__step--3">
+					<div class="step-number-wraper">
+						<p>3</p>
+					</div>
+
+					<div class="step-content">
+						<h4>Delivery</h4>
+						<p>Once everything is fixed, I’ll deliver your device ready to use, explain what was done, and share tips to prevent the issue again.</p>
+					</div>
+				</div>
+
+				
+			</div>
+		</section>
+
+		<section class="blog">
+			<h3 class="blog_main-heading">My Latest News & Blog</h3>
+			<p class="blog__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum harum debitis inventore. Est distinctio doloribus mollitia? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum harum debitis inventore. Est distinctio doloribus mollitia?</p>
+			<div class="blog__grid">
+				<div class="post featured-star">
+					<img src="https://placehold.co/650x500" alt="">
+					<div class="post-meta">
+						<p class="date">July, 23, 2025</p>
+						<p class="author">By cnicou</p>
+					</div>
+					<div class="post-content">
+						<h4>Lorem ipsum dolor sit amet.</h4>
+						<p class="post-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente culpa impedit vel nam sit, voluptatibus ab autemLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente culpa impedit vel nam sit, voluptatibus ab autem nulla facilis?</p>
+						<a href="" class="featured-star-btn btn-secondary-normal">Read More</a>
 
 					</div>
-					<h4>Lorem Ipsum</h4>
-					<p class="services__par">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-				</div> -->
+					
+				</div>
+
+				<div class="post featured-post featured-post--1">
+					<img src="https://placehold.co/300x230" alt="">
+					<div class="post-content">
+						<div class="post-meta">
+							<p class="date">July, 23, 2025</p>
+							<p class="author">By cnicou</p>
+						</div>
+						
+						<h4>Lorem ipsum dolor sit amet.</h4>
+						<p class="post-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente culpa impedit vel nam sit, voluptatibus ab autem nulla facilis?</p>
+						<a href="" class="post-btn btn-primary-normal">Read More</a>
+					</div>
+					
+				</div>
+					
+
+				<div class="post featured-post featured-post--1">
+					<img src="https://placehold.co/300x230" alt="">
+					<div class="post-content">
+
+						<div class="post-meta">
+							<p class="date">July, 23, 2025</p>
+							<p class="author">By cnicou</p>
+						</div>
+
+						
+						<h4>Lorem ipsum dolor sit amet.</h4>
+						<p class="post-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente culpa impedit vel nam sit, voluptatibus ab autem nulla facilis?</p>
+						<a href="" class="post-btn btn-primary-normal">Read More</a>
+					</div>
+					
+				</div>
+
+				<div class="post featured-post featured-post--1">
+					<img src="https://placehold.co/300x230"" alt="">
+					<div class="post-content">
+						<div class="post-meta">
+							<p class="date">July, 23, 2025 </p>
+							<p class="author">By cnicou</p>
+						</div>
+						<h4>Lorem ipsum dolor sit amet.</h4>
+						<p class="post-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente culpa impedit vel nam sit, voluptatibus ab autem nulla facilis?</p>
+						<a href="" class="post-btn btn-primary-normal">Read More</a>
+					</div>
+					
+				</div>
+
+
 			</div>
 		</section>
 
