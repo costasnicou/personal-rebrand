@@ -24,7 +24,7 @@
 		</video>
 		<hgroup class="cover-heading">
 			<h1>Hi I'm Costas Nicou</h1>
-			<h2>Your <strong>IT Technician</strong> for your <strong>University</strong> needs</h2>
+			<h2>Expert <strong>IT Support </strong>for Anyone Who Wants Tech <strong>That Just Works</strong></h2>
 		</hgroup>
 		
 	</div>
@@ -78,16 +78,16 @@
 
 				<article class="about-intro__right">
 					<h3>WELCOME TO MY WEBSITE</h3>
-					<h4>How can I help you achieve academic success</h4>
-					<p>Students save time and stress with fast IT support—fixing viruses, boosting performance, and preventing data loss—so your laptop stays reliable for studying and deadlines.</p>
+					<h4>How can I help you get more done without tech problems?</h4>
+					<p>Save time and stress with fast, reliable IT support—removing viruses, improving performance, and preventing data loss so your computer stays dependable for work, everyday use, and important tasks.</p>
 					<ul class="benefits">
-						<li><i class="fa-solid fa-check"></i>Faster laptop performance for studying, research, and multitasking</li>
-						<li><i class="fa-solid fa-check"></i>Reduced risk of losing assignments with backup and recovery support</li>
+						<li><i class="fa-solid fa-check"></i>Faster computer performance for smoother multitasking and productivity</li>
+						<li><i class="fa-solid fa-check"></i>Reduced risk of losing important files with backup and recovery support</li>
 						<li><i class="fa-solid fa-check"></i>Reliable Windows installs and updates for fewer crashes and errors</li>
-						<li><i class="fa-solid fa-check"></i>Quick troubleshooting so you don’t miss deadlines or online classes</li>
-						<li><i class="fa-solid fa-check"></i>Less overheating and fan noise for smoother, longer study sessions</li>
+						<li><i class="fa-solid fa-check"></i>Quick troubleshooting so you’re not stuck or wasting time</li>
+						<li><i class="fa-solid fa-check"></i>Less overheating and fan noise for quieter, longer use sessions</li>
 					</ul>
-					<a href="" class="btn-secondary">Get a Quota</a>
+					<a href="<?php echo esc_url( home_url('/') . '#contact' ); ?>" class="btn-secondary">Get a Quota</a>
 				</article>
 			</div>
 
@@ -137,7 +137,7 @@
 					<p class="services__par">Fast remote IT support to fix software issues, optimize performance, and guide you step-by-step.</p>
 				</div>
 			</div>
-			<a href="" class="btn-secondary services__view-more">View More</a>
+			<a href="<?php echo esc_url( home_url('/services/') ); ?>" class="btn-secondary services__view-more">View More</a>
 		</section>
 
 		<section class="workflow">
@@ -184,74 +184,116 @@
 			</div>
 		</section>
 
-		<section class="blog">
-			<h3 class="blog_main-heading">My Latest News & Blog</h3>
-			<p class="blog__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum harum debitis inventore. Est distinctio doloribus mollitia? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum harum debitis inventore. Est distinctio doloribus mollitia?</p>
-			<div class="blog__grid">
-				<div class="post featured-star">
-					<img src="https://placehold.co/650x500" alt="">
-					<div class="post-meta">
-						<p class="date">July, 23, 2025</p>
-						<p class="author">By cnicou</p>
-					</div>
-					<div class="post-content">
-						<h4>Lorem ipsum dolor sit amet.</h4>
-						<p class="post-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente culpa impedit vel nam sit, voluptatibus ab autemLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente culpa impedit vel nam sit, voluptatibus ab autem nulla facilis?</p>
-						<a href="" class="featured-star-btn btn-secondary-normal">Read More</a>
+		<section class="blog-hm">
+			<h3 class="blog-hm_main-heading">Latest News & Blog</h3>
+			<p class="blog-hm__intro">Welcome to my techie blog, where I share practical tutorials, honest reviews, and troubleshooting tips to help you build, fix, and optimize your tech with confidence. Whether you’re a beginner or a power user, you’ll find clear guides and real-world solutions you can use right away.</p>
+			
+			<?php
+				$sticky_ids = get_option('sticky_posts'); // array of post IDs
 
-					</div>
-					
-				</div>
+				$args_featured = array(
+				'post_type'           => 'post',
+				'post_status'         => 'publish',
+				'posts_per_page'      => 4,
+				'post__in'            => $sticky_ids,
+				'ignore_sticky_posts' => 1,                 // don't auto-pin; we control ordering
+				'orderby'             => 'date',
+				'order'               => 'DESC',
+				);
 
-				<div class="post featured-post featured-post--1">
-					<img src="https://placehold.co/300x230" alt="">
-					<div class="post-content">
-						<div class="post-meta">
-							<p class="date">July, 23, 2025</p>
-							<p class="author">By cnicou</p>
+				$featured_query = new WP_Query($args_featured);
+			?>
+		
+			<div class="blog-hm__grid">
+				<?php if ($featured_query->have_posts()) : ?>
+					<?php $i = 0; ?>
+					<?php while ($featured_query->have_posts()) : $featured_query->the_post(); $i++; ?>
+
+					<?php if ($i === 1) : ?>
+						<!-- STAR / BIG POST -->
+						<div class="post featured-post--1 featured-star">
+							<?php if (has_post_thumbnail()) : ?>
+								<?php the_post_thumbnail('large'); ?>
+							<?php else: ?>
+								<img src="https://placehold.co/650x500" alt="">
+							<?php endif; ?>
+
+							<div class="post-meta">
+								<p class="date"><i class="fa-solid fa-calendar"></i> <?php echo get_the_date('F, d, Y'); ?></p>
+								<p class="author"><i class="fa-solid fa-user"></i> By <?php the_author(); ?></p>
+							</div>
+
+							<div class="post-content">
+								<h4><?php the_title(); ?></h4>
+								<p class="post-par">
+								<?php echo wp_trim_words(get_the_excerpt(), 35, '...'); ?>
+								</p>
+								<a href="<?php the_permalink(); ?>" class="featured-star-btn btn-secondary-normal">Read More</a>
+							</div>
 						</div>
-						
-						<h4>Lorem ipsum dolor sit amet.</h4>
-						<p class="post-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente culpa impedit vel nam sit, voluptatibus ab autem nulla facilis?</p>
-						<a href="" class="post-btn btn-primary-normal">Read More</a>
-					</div>
-					
-				</div>
-					
 
-				<div class="post featured-post featured-post--1">
-					<img src="https://placehold.co/300x230" alt="">
-					<div class="post-content">
+					<?php else: ?>
+						<!-- SMALL POSTS -->
+						<div class="post featured-post featured-post--<?php echo $i; ?>">
+						<?php if (has_post_thumbnail()) : ?>
+							<?php the_post_thumbnail('medium'); ?>
+						<?php else: ?>
+							<img src="https://placehold.co/300x230" alt="">
+						<?php endif; ?>
 
-						<div class="post-meta">
-							<p class="date">July, 23, 2025</p>
-							<p class="author">By cnicou</p>
+						<div class="post-content">
+							<div class="post-meta">
+								<p class="date"><i class="fa-solid fa-calendar"></i> <?php echo get_the_date('F, d, Y'); ?></p>
+								<p class="author"><i class="fa-solid fa-user"></i> By <?php the_author(); ?></p>
+							</div>
+
+							<h4><?php the_title(); ?></h4>
+							<!-- <p class="post-par">
+							<?php //echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
+							</p> -->
+							<a href="<?php the_permalink(); ?>" class="post-btn btn-primary-normal">Read More</a>
 						</div>
-
-						
-						<h4>Lorem ipsum dolor sit amet.</h4>
-						<p class="post-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente culpa impedit vel nam sit, voluptatibus ab autem nulla facilis?</p>
-						<a href="" class="post-btn btn-primary-normal">Read More</a>
-					</div>
-					
-				</div>
-
-				<div class="post featured-post featured-post--1">
-					<img src="https://placehold.co/300x230"" alt="">
-					<div class="post-content">
-						<div class="post-meta">
-							<p class="date">July, 23, 2025 </p>
-							<p class="author">By cnicou</p>
 						</div>
-						<h4>Lorem ipsum dolor sit amet.</h4>
-						<p class="post-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sapiente culpa impedit vel nam sit, voluptatibus ab autem nulla facilis?</p>
-						<a href="" class="post-btn btn-primary-normal">Read More</a>
-					</div>
-					
-				</div>
+					<?php endif; ?>
 
-
+					<?php endwhile; ?>
+					<?php wp_reset_postdata(); ?>
+					<?php endif; ?>
 			</div>
+
+			<a href="<?php echo esc_url( home_url('/blog/') ); ?>" class="more-posts">All Articles</a>
+		</section>
+
+		<section class="call-to-action">
+			<h3>Ready to get started?</h3>
+			<p>Need help with your device or have a question about a tech issue? Send me a message with what you’re facing, and I’ll get back to you with the next steps and a clear solution. Contact me today and let’s get your tech running smoothly again.</p>
+		</section>
+		<section id="contact" class="contact">
+			<!-- <h3>Contact Me</h3> -->
+			<div class="contact-wraper">
+				<div class="contact-wraper-left">
+					<p class="contact-intro">Have any Question?</p>
+					<h3 class="contact-title">Contact me and get latest information about my services</h3>
+					<p class="contact-par">Stay connected for the latest updates on my services, new offers, and helpful tech tips that can save you time and money. I share clear, honest information and real solutions—so you always know what to expect and how I can help when you need reliable support.<p>
+				
+					<div class="contact-social">
+						<h4>Follow Me On:</h4>
+						<div class="social-flex">
+							<a href="https://www.instagram.com/cnicou.tech/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://www.facebook.com/costas.nicou.3/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+							<a href="https://www.linkedin.com/in/cnicou/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+						</div>
+					</div>
+				
+				</div>
+
+				<div class="contact-wraper-right">
+					<h3 class="contact-title2">Fill in the form</h3>
+					<p class="contact-intro-2">Don’t let a tech issue keep you stuck—fill in the contact form and tell me what you need. I’ll review your message and get back to you with clear next steps, so we can get everything working smoothly again.</p>
+					<?php echo apply_shortcodes( '[contact-form-7 id="9b3729a" title="contact-home"]' ); ?>
+				</div>
+			</div>
+			
 		</section>
 
 	</main><!-- #main -->
@@ -260,3 +302,5 @@
 
 
 get_footer();
+
+?>

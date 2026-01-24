@@ -1,0 +1,116 @@
+.post-cover{
+   height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../imgs/services-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 121px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+    h1{
+        font-size: 6rem;
+        color: white;
+    }
+}
+
+.blog-wraper{
+   margin-top: 91px;
+    display: grid;
+    grid-template-columns: 17.5% 65% 17.5%;
+    grid-template-rows: 1fr;
+
+    .left-sidebar,.right-sidebar{
+        background-color: whitesmoke;
+    }
+
+    .left-sidebar{
+        
+        .sidebar-posts{
+            // position: fi;
+          
+
+            padding: 0;
+            h2{
+                margin: 60px 40px 20px 0;   
+                text-align: center;  
+                font-size: 1.8rem;
+            }
+            
+            .sidebar-post{
+                padding: 10px 20px 50px 0;
+                margin-left: 50px;
+
+              
+                .sidebar-post-img{
+                    width: 200px; 
+                    height: 200px; 
+                    border-radius: 5px;
+                }
+            
+                p{
+                    height: 50px;
+                    overflow: hidden;
+                    width: 85%;
+                    font-size: 1.2rem;
+                }
+
+                h3{
+                    // color: $color-secondary;
+                    font-size: 1.6rem;
+                }
+                p,h3{
+                    font-weight: 400;
+                }
+            }
+        }
+
+    }
+
+    .article-wraper{
+        text-align: center;
+        .post{
+            width: 85%;
+            margin: 20px auto;
+            padding-bottom: 40px;
+            text-align: left;
+            h1{
+                text-align: center;
+                font-size: 40px;
+                font-weight: 300;
+            }
+
+            h2{
+                font-size: 30px;
+                font-weight: 300;
+            }
+
+            h3{
+                font-size: 25px;
+                font-weight: 300;
+            }
+            p{
+                font-size: 1.9rem;
+                font-weight: 300;
+
+            }
+        }
+
+        .get-back{
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: darken($color-secondary,10%);
+            display: inline-block;
+
+            &:hover{
+                 color: darken($color-secondary,20%);
+                 text-decoration: underline;
+            }
+        }
+    }
+}

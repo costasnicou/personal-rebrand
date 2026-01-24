@@ -1,0 +1,147 @@
+.blog-cover{
+    height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../imgs/blog-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 121px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 6rem;
+        color: white;
+    }
+}
+
+.blog-main{
+    margin-top: 123px;
+
+    .blog-page-header{
+        h2{
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 300;
+            margin-top: 60px;
+        }
+    }
+}
+
+
+.blog-grid{
+    display: grid;
+    grid-template-columns: 17.5% 65% 17.5%;
+    grid-template-rows: 1fr;
+
+    &-left,&-right{
+        background-color: whitesmoke;
+    }
+}
+
+
+
+.blog__grid{
+    width: 100%;
+    margin: 0 auto;
+}
+.blog-section{
+    padding: 10px 0 60px 0;
+}
+.post-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-of-type){
+        margin-bottom: 20px
+    }
+    // margin: 30px 0;
+    padding: 30px 30px;
+    transition: transform .8s,background-color .8s,color .8s;
+    
+     border-radius: 8px;
+    .post-img { 
+        height: 250px;
+        width: 250px;
+        margin-right: 40px;
+        border-radius: 8px;
+    }
+
+    &__content{
+        width: 70%;
+        p,h2{
+            font-weight: 300;
+            transition: all 1s;
+        }
+        h2{
+            font-size: 25px;
+            line-height: 2rem;
+            margin: 0;
+        }
+
+        .post-card__meta{
+            font-size: 1.4rem;
+            i{
+                color: $color-grey-light;
+                margin-right: 5px;
+            }
+
+            i.fa-solid.fa-user{
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &__excerpt{
+        font-size: 1.7rem;
+    }
+
+    &:hover{
+        // background-color: lighten($color-primary,15%);
+        // color: white;
+        transform: scale(1.02);
+        
+    }
+
+     &:hover &__link{
+        background-color: $color-secondary;
+     }
+
+    //  &:hover &__content h2, &:hover &__content p{
+    //     font-weight: 400;
+    //  }
+    
+}
+
+
+.pagination{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+
+    .page-numbers{
+
+        padding: 5px;
+        background-color: lighten($color-primary,10%);
+        border-radius: 8px;
+        color: white;
+        
+        display: inline-block;
+        min-width:35px ;
+        text-decoration: none;
+        margin: 0 2.5px;
+
+        &:hover{
+           background-color: lighten($color-secondary,10%);
+        }
+    }
+
+    .page-numbers.current{
+        background-color: lighten($color-secondary,5%);
+    }
+}

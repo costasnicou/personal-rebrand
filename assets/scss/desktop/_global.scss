@@ -1,8 +1,16 @@
+html{
+ scroll-behavior: smooth;
+}
 html,body{
     font-family: "Roboto", sans-serif;
     font-size: 10px;
+    margin: 0;
+    padding: 0;
+       
 }
-
+body,main{
+    background-color: white;
+}
 // variables
 
 $color-primary:rgb(47, 154, 255);
@@ -10,7 +18,9 @@ $color-secondary: rgb(255, 127, 47);
 $color-grey-light: rgb(155, 155, 155);
 $main-heading-size: 3rem;
 
-
+.page{
+    margin: 0;
+}
 .site-header{
     // color:
     position: fixed;
@@ -79,8 +89,9 @@ $main-heading-size: 3rem;
                     font-weight: bold;
                 }
 
-                i{
+               a:link,a:visited,a i{
                     font-size: 1.6rem;
+                    color: white;
                 }
 
                 & > *:not(:last-child){
@@ -92,6 +103,7 @@ $main-heading-size: 3rem;
 
     .bottom-header{
         position: relative;
+        background-color: white;
         i{
             font-size: 5rem;
             color:  rgb(255, 127, 47);
@@ -124,59 +136,83 @@ $main-heading-size: 3rem;
     }
 
 
-    .main-menu{
+    .menu-wraper{
+        label,#toggle{
+            display: none;
+        }
+        .main-menu{
 
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        margin: 0;
-        // padding-bottom: 5px;
-        height: 80px;
-        // width: 50%;
-        background-color: white;
-        margin: 0 auto;
-        // border-bottom:2px solid orangered;;
-        .list-item{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            margin: 0;
+            // padding-bottom: 5px;
+            height: 80px;
+            // width: 50%;
+            background-color: white;
+            padding-left: 0;
+            margin-right: 100px;
+            // border-bottom:2px solid orangered;;
+            .list-item{
 
-            // margin: 20px 10px;
-            // align-self: stretch;
-            align-self: center;
+                // margin: 20px 10px;
+                // align-self: stretch;
+                align-self: center;
 
-            .link-item:link,.link-item:visited{
-                text-decoration: none;
-                text-transform: capitalize;
-                // font-weight: bold;
-                // color: white;
-                color: rgb(129, 129, 129);
-                font-size:1.8rem;
-                // transition: all .5s;
-                padding: 10px 20px;
-                transition: all .2s;
-                // text-shadow: 2px 2px 9px #787878;
-                border-radius: 8px;
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // text-align: center;
-
-            }
-
-            .link-item{
-                &:hover{
-                    // border-bottom: 5px solid rgb(68, 36, 208);
-                    // background-color: rgb(68, 36, 208);
-                    // background-color: rgb(47, 154, 255);
-                    color:  rgb(47, 154, 255);
-                    
+                .link-item:link,.link-item:visited{
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    // font-weight: bold;
+                    // color: white;
+                    color: rgb(129, 129, 129);
+                    font-size:1.8rem;
+                    // transition: all .5s;
+                    padding: 10px 20px;
+                    transition: all .2s;
+                    // text-shadow: 2px 2px 9px #787878;
+                    border-radius: 8px;
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    // text-align: center;
 
                 }
+
+                .link-item{
+                    &:hover{
+                        // border-bottom: 5px solid rgb(68, 36, 208);
+                        // background-color: rgb(68, 36, 208);
+                        // background-color: rgb(47, 154, 255);
+                        color:  rgb(47, 154, 255);
+                        
+
+                    }
+                }
             }
+
+
         }
-
-
     }
 }
 
 section{
-    padding: 20px 0;
+    padding: 30px 0;
+}
+
+main{
+    // min-height: 900px;
+}
+
+.site-footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darken($color-primary,20%);
+    .copyright{
+        text-align: center;
+        font-size: 1.7rem;
+        color: white;
+        margin: 0;
+    }
 }

@@ -1,0 +1,126 @@
+@media (min-width:320px) and (max-width: 425px) {
+
+   
+    .site-header .top-header{
+        height: unset;
+        background-color: #2f9aff;
+        display: flex;
+        align-items: center;
+        position: relative;
+       
+        
+    }
+
+     
+
+    .box.location{
+        display: none;
+    }
+    .site-header .bottom-header i {
+        font-size: 3rem;
+        color: #ff7f2f;
+        position: absolute;
+        right: 6%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        left: unset;
+    }
+    .site-header .bottom-header .quota {
+        display: none;
+    }
+    .site-header .top-header .top-header__left .box:not(:last-of-type){
+            
+        border-right: none
+    }
+    // .site-header .top-header nav {
+    //     display: flex;
+    //     color: white;
+    //     align-items: center;
+    //     justify-content: center;
+    //     width: 80%;
+    //     margin: 0 auto;
+    //     flex-direction: column;
+    //     padding: 5px 0;
+    //     text-align: center;
+
+    // }
+    .site-header .top-header nav {
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        margin: 0 auto;
+        flex-direction: column;
+        padding: 5.5px 0;
+        text-align: center;
+    }
+    .top-header__left{
+
+        flex-direction: column;
+    }
+
+
+
+    // ubchecked bottom header
+    .site-header .bottom-header {
+        position: relative;
+        background-color: white;
+        height: 40px;
+    }
+
+    .site-header .menu-wraper{
+        position: relative;
+        background-color: white;
+        // height: 100%;
+        label{
+            display: inline-block;
+            font-size: 25px;
+            position: absolute;
+            top: 2px;
+            left: 15px;
+
+        }
+
+        .main-menu{
+            
+            visibility: hidden;
+            opacity: 0;
+            height: 40px;
+            transition: height 0.5s ease-out;
+        }
+
+
+        #toggle:checked + .main-menu{
+            opacity: 1;
+            visibility: visible;
+            display: block;
+            height: 280px;
+            transition: all 0.5s ease-out;
+            padding-top: 50px;
+            li{
+                 margin-left: 40px;
+            }
+            li:not(:last-of-type){
+                margin-bottom: 10px;
+               
+            }
+        }
+
+        
+        
+    }
+    
+
+    .site-footer .copyright {
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        margin: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+            
+
+}

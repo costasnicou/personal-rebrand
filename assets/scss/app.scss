@@ -1,3 +1,11 @@
-@import "global";
-@import "components";
-@import "front-page";
+// DESKTOP STYLES
+@import "desktop/global";
+@import "desktop/components";
+@import "desktop/front-page";
+@import "desktop/about-me";
+@import "desktop/blog";
+@import "desktop/single";
+
+// MOBILE STYLES
+@import "mobile/global";
+@import "mobile/homepage";

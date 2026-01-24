@@ -41,9 +41,10 @@
 				<div class="top-header__right">
 					<div class="social">
 						<p>Follow Me On: </p>
-						<i class="fa-brands fa-instagram"></i>
-						<i class="fa-brands fa-facebook"></i>
-						<i class="fa-brands fa-linkedin"></i>
+						<a href="https://www.instagram.com/cnicou.tech/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.facebook.com/costas.nicou.3/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+						<a href="https://www.linkedin.com/in/cnicou/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+						
 						
 					</div>
 				</div>
@@ -52,15 +53,31 @@
 		</div>
 		<nav class="bottom-header" >
 			<i class="fa-solid fa-computer brand-logo"></i>
-			<ul class="main-menu">
+			<!-- <ul class="main-menu">
 				<li class="list-item"><a href="" class="link-item">Home</a></li>
 				<li class="list-item"><a href="" class="link-item">About Us</a></li>
 				<li class="list-item"><a href="" class="link-item">Service</a></li>
 				<li class="list-item"><a href="" class="link-item">Blog</a></li>
 				<li class="list-item"><a href="" class="link-item">Pages</a></li>
 				<li class="list-item"><a href="" class="link-item">Contact</a></li>
-			</ul>
+			</ul> -->
+			<div class="menu-wraper">
+				<label for="toggle">&#9776;</label>
+                <input type="checkbox" name="checkbox" id="toggle">
+				<?php
+					wp_nav_menu([
+					'theme_location' => 'primary',
+					'container'      => false,
+					'menu_class'     => 'main-menu',
+					'fallback_cb'    => false,
+					'items_wrap'     => '<ul class="%2$s">%3$s</ul>',
+					'link_before'    => '<span class="link-item">',
+					'link_after'     => '</span>',
+					]);
+				?>
+								
 
-			<a href="" class="quota">Get a Quota</a>
+				<a href="<?php echo esc_url( home_url('/') . '#contact' ); ?>" class="quota">Get a Quota</a>
+			</div>
 		</nav>
 	</header><!-- #masthead -->
