@@ -2031,6 +2031,12 @@ section {
     -moz-box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
     text-align: center; }
 
+  .budges .budge .icon-explain--3 p {
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 90%;
+    margin: 0 auto 20px auto; }
+
   .about-intro__wraper {
     width: 100%;
     margin: 0 auto;
