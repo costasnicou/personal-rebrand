@@ -147,7 +147,7 @@
         height: 150px;
         margin: 0 auto;
         background-color: #ff7f2f;
-        margin-top: -100px;
+        margin-top: -79px;
         position: relative;
         z-index: 12;
         display: flex;
@@ -269,33 +269,4 @@
 
 
 
-    // blog page
-    .blog-cover {
-        height: 400px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/blog-cover.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        top: 121px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .blog-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    .blog-grid-left, .blog-grid-right {
-       display: none;
-    }
-
-    .blog-grid-center{
-        width: 80%;
-        margin: 0 auto;
-    }
 }

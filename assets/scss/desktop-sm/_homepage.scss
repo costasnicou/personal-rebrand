@@ -1,14 +1,20 @@
 @media (min-width:769px) and (max-width: 1024px){
-    
     .cover-video {
-        height: 75vh;
+        height: 70vh;
         width: 100%;
         position: relative;
         background-color: white;
-        top: 0px;
+        top: 132px;
     }
     .cover-video .bg-video__content {
-        height: 75vh;
+        height: 65vh;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+        position: relative;
+    }
+    .cover-video .bg-video__content {
+        height: 70vh;
         width: 100%;
         object-fit: cover;
         filter: brightness(50%);
@@ -18,7 +24,7 @@
 
     .cover-video .cover-heading {
         position: absolute;
-        top: 66%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -60%);
         width: 80%;
@@ -39,6 +45,12 @@
     .budges {
      
         display: none;
+    }
+
+    .about-intro {
+        padding: 80px 20px 40px 20px;
+        background-color: white;
+        margin: 100px 0 0 0;
     }
 
     .about-intro__wraper {

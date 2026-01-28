@@ -1879,14 +1879,21 @@ section {
     transition: all .3s; } }
 @media (min-width: 769px) and (max-width: 1024px) {
   .cover-video {
-    height: 75vh;
+    height: 70vh;
     width: 100%;
     position: relative;
     background-color: white;
-    top: 0px; }
+    top: 132px; }
 
   .cover-video .bg-video__content {
-    height: 75vh;
+    height: 65vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    position: relative; }
+
+  .cover-video .bg-video__content {
+    height: 70vh;
     width: 100%;
     object-fit: cover;
     filter: brightness(50%);
@@ -1894,7 +1901,7 @@ section {
 
   .cover-video .cover-heading {
     position: absolute;
-    top: 66%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
     width: 80%;
@@ -1910,6 +1917,11 @@ section {
 
   .budges {
     display: none; }
+
+  .about-intro {
+    padding: 80px 20px 40px 20px;
+    background-color: white;
+    margin: 100px 0 0 0; }
 
   .about-intro__wraper {
     width: 90%;
@@ -2219,7 +2231,7 @@ section {
     height: 150px;
     margin: 0 auto;
     background-color: #ff7f2f;
-    margin-top: -100px;
+    margin-top: -79px;
     position: relative;
     z-index: 12;
     display: flex;
@@ -2320,32 +2332,7 @@ section {
     width: 180px;
     height: 180px;
     object-fit: cover;
-    flex-shrink: 0; }
-
-  .blog-cover {
-    height: 400px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/blog-cover.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    top: 121px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center; }
-
-  .blog-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr; }
-
-  .blog-grid-left, .blog-grid-right {
-    display: none; }
-
-  .blog-grid-center {
-    width: 80%;
-    margin: 0 auto; } }
+    flex-shrink: 0; } }
 @media (min-width: 1025px) and (max-width: 1440px) {
   .intro-page-section .intro-page-article {
     width: 75%;
