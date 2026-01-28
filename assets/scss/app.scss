@@ -9,3 +9,28 @@
 // MOBILE STYLES
 @import "mobile/global";
 @import "mobile/homepage";
+@import "mobile/page";
+@import "mobile/blog";
+@import "mobile/single";
+
+// TABLET SMALL PORTAIT 
+@import "tablet-portait/global";
+@import "tablet-portait/homepage";
+@import "tablet-portait/page";
+@import "tablet-portait/blog";
+@import "tablet-portait/single";
+// mobile landscape
+@import "mobile-landscape/homepage";
+
+// Laptop Small
+@import "desktop-sm/global";
+@import "desktop-sm/homepage";
+@import "desktop-sm/page";
+@import "desktop-sm/blog";
+@import "desktop-sm/single";
+
+// Desktop 1440px
+@import "desktop-lg/homepage";
+@import "desktop-lg/page";
+@import "desktop-lg/blog";
+@import "desktop-lg/single";

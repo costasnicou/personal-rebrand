@@ -70,7 +70,7 @@
 				<div class="about-intro__left">
 					<img class="img-sm" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/computers/img1.jpg" alt="">
 					<img class="img-lg" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/computers/img2.jpg" alt="">
-					<img class="img-lg" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/computers/img3.jpg" alt="">
+					<img id="img-exception" class="img-lg" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/computers/img3.jpg" alt="">
 					<img class="img-sm" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/computers/img4.jpg" alt="">
 
 

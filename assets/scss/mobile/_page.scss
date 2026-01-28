@@ -1,0 +1,51 @@
+@media (min-width:320px) and (max-width: 500px){
+
+    .cover-img-about-me {
+        height: 300px;
+        background-image: url(../imgs/about-me-cover.jpg);
+        opacity: 0.8;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+       top: 116px;
+    }
+
+    .cover-img-services {
+        height: 300px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/services-cover.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        top: 116px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .intro-page-section .intro-page-article h1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .intro-page-section .intro-page-article h2 {
+        font-size: 27px;
+        font-weight: 300;
+    }
+
+    .intro-page-section .intro-page-article {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 5px;
+    }
+
+    .intro-page-section{
+        padding-bottom: 10px;
+    }
+
+
+}

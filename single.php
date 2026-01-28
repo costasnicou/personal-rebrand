@@ -76,7 +76,7 @@ get_header();
 
 						<?php the_content(); ?>
 					</article>
-					 <a class="get-back" href="<?php echo get_home_url(); ?>">Back to Homepage</a>
+					 <a class="get-back" href="<?php echo site_url('/blog'); ?>">Back to Articles</a>
 				</div>
 				
 

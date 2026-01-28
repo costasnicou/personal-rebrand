@@ -1,38 +1,14 @@
-@media (min-width:320px) and (max-width: 500px) {
 
-   
+@media (min-width:501px) and (max-width: 768px) {
     .site-header .top-header{
         height: unset;
         background-color: #2f9aff;
         display: flex;
         align-items: center;
         position: relative;
-       
-        
     }
 
-     
-
-    .box.location{
-        display: none;
-    }
-    .site-header .bottom-header i {
-        font-size: 3rem;
-        color: #ff7f2f;
-        position: absolute;
-        right: 6%;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 10;
-        left: unset;
-    }
-    .site-header .bottom-header .quota {
-        display: none;
-    }
-    .site-header .top-header .top-header__left .box:not(:last-of-type){
-            
-        border-right: none
-    }
+    
 
     .site-header .top-header nav {
         display: flex;
@@ -44,12 +20,11 @@
         flex-direction: column;
         padding: 5.5px 0;
         text-align: center;
-    }
-    .top-header__left{
 
-        flex-direction: column;
+        &>*{
+            margin: 5px 0;
+        }
     }
-
 
 
     // ubchecked bottom header
@@ -97,11 +72,24 @@
             }
         }
 
-        
+
         
     }
-    
 
+    .site-header .bottom-header i {
+        font-size: 3rem;
+        color: #ff7f2f;
+        position: absolute;
+        right: 6%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        left: unset;
+    }
+    .site-header .bottom-header .quota {
+        display: none;
+    }
+        
     .site-footer .copyright {
         text-align: center;
         font-size: 1.5rem;
@@ -110,6 +98,28 @@
         width: 80%;
         margin: 0 auto;
     }
-            
 
 }
+
+@media (min-width:501px) and (max-width: 761px){
+    .site-header .top-header__left {
+        display: flex;
+        font-size: 1.4rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .site-header .top-header__left .box:not(:last-of-type) {
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: none;
+    }
+
+    .box.location{
+        display: none;
+    }
+
+    .site-header .top-header nav > * {
+        margin: 0;
+    }
+} 

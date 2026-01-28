@@ -1,0 +1,16 @@
+@media (min-width:769px) and (max-width: 1024px){
+    .blog-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .blog-grid-left, .blog-grid-right {
+        display: none;
+    }
+
+    .blog-grid-center{
+        width: 85%;
+        margin: 0 auto;
+    }
+}

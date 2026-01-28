@@ -1,0 +1,40 @@
+@media (min-width:501px) and (max-width: 768px){
+
+    .cover-img-about-me {
+        height: 400px;
+        background-image: url(../imgs/about-me-cover.jpg);
+        opacity: 0.8;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        top: 116px;
+    }
+
+    .cover-img-services {
+        height: 400px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/services-cover.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        top: 116px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .intro-page-section .intro-page-article {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 5px;
+    }
+
+    .intro-page-section{
+        padding-bottom: 10px;
+    }
+
+
+}

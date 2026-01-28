@@ -1,0 +1,42 @@
+@media (min-width:320px) and (max-width: 500px) {
+
+    .post-cover {
+        height: 400px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/services-cover.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        top: 118px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .post-cover h1 {
+        font-size: 4rem;
+        color: white;
+    }
+
+    .blog-wraper {
+        margin-top: 91px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .blog-wraper .left-sidebar, .blog-wraper .right-sidebar {
+       display: none;
+    }
+
+    .blog-wraper .article-wraper {
+        text-align: center;
+        padding-bottom: 40px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+
+}
