@@ -7,3 +7,36 @@
 
   
 }
+
+@media (min-width:1025px) and (max-width:1181px){
+
+    // blog page
+    .blog-cover {
+        height: 400px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/blog-cover.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        top: 121px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .blog-grid-left, .blog-grid-right {
+       display: none;
+    }
+
+    .blog-grid-center{
+        width: 85%;
+        margin: 0 auto;
+    }
+}
