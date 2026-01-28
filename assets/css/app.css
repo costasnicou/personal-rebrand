@@ -2023,6 +2023,19 @@ section {
     margin: 0 auto;
     padding-bottom: 0; } }
 @media (min-width: 769px) and (max-width: 1024px) {
+  .blog-cover {
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/blog-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 121px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+
   .blog-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -2032,8 +2045,14 @@ section {
     display: none; }
 
   .blog-grid-center {
-    width: 85%;
-    margin: 0 auto; } }
+    width: 100%;
+    margin: 0 auto; }
+
+  .post-card .post-img {
+    height: 200px;
+    width: 200px;
+    margin-right: 40px;
+    border-radius: 8px; } }
 @media (min-width: 769px) and (max-width: 1024px) {
   .post-cover {
     height: 400px;
