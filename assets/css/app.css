@@ -1785,7 +1785,61 @@ section {
     width: 69%;
     margin: 0 auto;
     line-height: 45px; } }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 916px) {
+  .site-header .top-header {
+    height: 51px;
+    background-color: #2f9aff;
+    display: flex;
+    align-items: center; }
+
+  .site-header .top-header nav {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    flex-direction: column;
+    padding: 0px 0; }
+
+  .site-header .menu-wraper .main-menu .list-item .link-item:link, .site-header .menu-wraper .main-menu .list-item .link-item:visited {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #818181;
+    font-size: 1.8rem;
+    padding: 10px 10px;
+    transition: all .2s;
+    border-radius: 8px; }
+
+  .cover-video .cover-heading h2 {
+    font-size: 4rem;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 60px; }
+
+  .site-header .bottom-header i {
+    font-size: 5rem;
+    color: #ff7f2f;
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-15%); }
+
+  .site-header .bottom-header .quota {
+    display: inline-block;
+    color: white;
+    background-color: #ff7f2f;
+    padding: 10px 30px;
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-15%);
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all .3s; } }
+@media (min-width: 917px) and (max-width: 1024px) {
   .site-header .top-header {
     height: 55px;
     background-color: #2f9aff;
@@ -1951,6 +2005,18 @@ section {
 
   .contact-wraper-right {
     margin-top: 50px; } }
+@media (min-width: 769px) and (max-width: 916px) {
+  .cover-video .cover-heading h2 {
+    font-size: 4rem;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 60px; }
+
+  .about-intro__wraper {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse; } }
 @media (min-width: 769px) and (max-width: 1024px) {
   .intro-page-section .intro-page-article {
     width: 85%;
@@ -2011,7 +2077,7 @@ section {
     line-height: 79px; }
 
   .budges {
-    width: 90%;
+    width: 95%;
     height: 180px;
     margin: 0 auto;
     background-color: #ff7f2f;
@@ -2099,7 +2165,16 @@ section {
   .blog-grid {
     display: grid;
     grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 1fr; } }
+    grid-template-rows: 1fr; }
+
+  .site-header .menu-wraper .main-menu .list-item .link-item:link, .site-header .menu-wraper .main-menu .list-item .link-item:visited {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #818181;
+    font-size: 1.8rem;
+    padding: 10px 10px;
+    transition: all .2s;
+    border-radius: 8px; } }
 @media (min-width: 1025px) and (max-width: 1440px) {
   .post-cover {
     height: 400px;
