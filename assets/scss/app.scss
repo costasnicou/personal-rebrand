@@ -5,6 +5,7 @@
 @import "desktop/about-me";
 @import "desktop/blog";
 @import "desktop/single";
+@import "desktop/shop";
 
 // MOBILE STYLES
 @import "mobile/global";
@@ -12,6 +13,7 @@
 @import "mobile/page";
 @import "mobile/blog";
 @import "mobile/single";
+@import "mobile/shop-global";
 
 // TABLET SMALL PORTAIT 
 @import "tablet-portait/global";
@@ -19,6 +21,8 @@
 @import "tablet-portait/page";
 @import "tablet-portait/blog";
 @import "tablet-portait/single";
+@import "tablet-portait/shop-global";
+
 // mobile landscape
 @import "mobile-landscape/homepage";
 
@@ -28,9 +32,12 @@
 @import "desktop-sm/page";
 @import "desktop-sm/blog";
 @import "desktop-sm/single";
+@import "desktop-sm/shop-global";
 
 // Desktop 1440px
+@import "desktop-lg/global";
 @import "desktop-lg/homepage";
 @import "desktop-lg/page";
 @import "desktop-lg/blog";
 @import "desktop-lg/single";
+@import "desktop-lg/shop-global";

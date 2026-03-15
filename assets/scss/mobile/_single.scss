@@ -36,7 +36,18 @@
         padding-bottom: 40px;
         width: 95%;
         margin: 0 auto;
+        margin-top: 30px;
     }
 
+        .blog-wraper .article-wraper .post {
+        width: 95%;
+        margin: 20px auto;
+        padding-bottom: 40px;
+        text-align: left;
+    }
 
+        .blog-wraper .article-wraper .post h2 {
+        font-size: 25px;
+        font-weight: 300;
+    }
 }

@@ -1,0 +1,228 @@
+.shop-main{
+    // min-height: 90vh;
+    margin: 0;
+    padding: 0;
+}
+.products-container {
+    min-height: 90vh;
+    width: 75%;
+    margin: 0 auto;
+    /* margin-top: 150px; */
+    padding: 20px 0;
+    padding-top: 200px;
+    font-family: "Roboto", sans-serif;
+    font-size: larger;
+}
+
+
+
+// overriding styles
+
+
+// ---------SHOP PAGE STYLES------
+// -----------------------------------------
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+    background: #fff;
+    border: none;
+    box-sizing: content-box;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 2em;
+    height: 36px;
+    padding: 0;
+    position: absolute;
+    right: .5em;
+    text-indent: -9999px;
+    top: .5em;
+    width: 36px;
+    z-index: 1; 
+}
+
+// .woocommerce ul.products li.product img {
+//     width: 100%;
+//     height: auto;
+//     object-fit: contain;
+// }
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    float: left;
+    margin: 0 3.8% 2.992em 0;
+    padding: 0;
+    position: relative;
+    width: 20.00%;
+    margin-left: 0;
+    border: 1px solid darkgrey;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.woocommerce div.product div.images img {
+    display: block;
+    width: 65%;
+    height: auto;
+    box-shadow: none;
+}
+.woocommerce div.products div.product img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__link {
+    display: block;
+}
+
+// .woocommerce ul.products li.product img {
+//     width: 100%;
+//     // aspect-ratio: 6 / 5;
+//     object-fit: contain;
+//     height: auto;
+// }
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit.alt, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.alt, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce #respond input#submit.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce a.button.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce button.button.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce input.button.alt {
+    background-color: $color-primary;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+// product link heading color
+.woocommerce ul.products li.product a.woocommerce-loop-product__link:visited,.woocommerce ul.products li.product a.woocommerce-loop-product__link:link {
+    display: block;
+    color: darken($color-primary,5%);
+}
+
+// product heading size
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+    padding: .5em 0;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+// showing price
+.woocommerce ul.products li.product .price {
+    display: block;
+    font-weight: 400;
+    margin-bottom: .5em;
+    font-size: 1.5em;
+    color: rgb(79, 133, 79);
+}
+
+
+// on sale icon
+.woocommerce span.onsale {
+    min-height: 3.236em;
+    min-width: 3.236em;
+    padding: .202em;
+    font-size: 1em;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    line-height: 3.236;
+    top: -.5em;
+    left: -.5em;
+    margin: 0;
+    border-radius: 100%;
+    background-color: rgb(79, 133, 79);
+    color: #fff;
+    font-size: .857em;
+    z-index: 9;
+}
+
+
+// product button
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce #respond input#submit, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce a.button, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce button.button, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce input.button {
+    font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: .618em 2em;
+    font-weight: 700;
+    border-radius: 3px;
+    left: auto;
+    color: white;
+    background-color: $color-primary;
+    border: none;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    margin: 0 auto;
+
+    &:hover{
+         background-color: darken($color-primary,5%);
+         color: white;
+    }
+}
+
+
+// VIEW CART LINK
+.woocommerce a.added_to_cart {
+    padding-top: .5em;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+}
+a.added_to_cart.wc-forward.blink-cart-link {
+    animation: cartBlink 0.8s linear infinite !important;
+    background: #e08048 !important;
+    color: white !important;
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+@keyframes cartBlink {
+    0% {
+        opacity: 1;
+        color: white;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.35;
+        transform: scale(1.05);
+          color: white;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+          color: white;
+    }
+}
+
+
+// -------SINGLE PRODUCT STYLES-------
+// ------------------------------------------
+// single product description li size
+.woocommerce-product-details__short-description ul li{
+    font-size: 1.3rem;
+}
+
+.woocommerce #content div.product .woocommerce-tabs, .woocommerce div.product .woocommerce-tabs, .woocommerce-page #content div.product .woocommerce-tabs, .woocommerce-page div.product .woocommerce-tabs {
+    // clear: both;
+    display: none;
+
+}
+
+// PRICE ON SINGLE PRODUCT
+
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product p.price, .woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product span.price {
+    color: #958e09;
+    font-size: 1.6em;
+}
+
+/*CART STYLES----------
+----------------------------*/
+
+// cart page proceed to checkout button
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit.alt, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.alt, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce #respond input#submit.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce a.button.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce button.button.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor)) .woocommerce input.button.alt {
+    background-color: $color-primary;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+
+     &:hover{
+         background-color: darken($color-primary,5%);
+         color: white;
+    }
+}
+

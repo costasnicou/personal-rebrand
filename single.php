@@ -12,17 +12,17 @@ get_header();
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<div class="post-cover"
-		<?php
-			// Optional: use featured image as cover background
-			$cover = get_the_post_thumbnail_url( get_the_ID(), 'full' );
-			if ( $cover ) :
-		?>
-			style="background-image:url('<?php echo esc_url( $cover ); ?>'); background-position:center; background-size:cover;"
+<?php $cover = get_the_post_thumbnail_url( get_the_ID(), 'full' ); ?>
+
+	<div
+		class="post-cover"
+		<?php if ( $cover ) : ?>
+			style="background-image: url('<?php echo esc_url( $cover ); ?>'); background-position: center; background-size: cover;"
 		<?php endif; ?>
 	>
 		<h1><?php the_title(); ?></h1>
 	</div>
+
 
 	<main>
 		<div class="blog-wraper">	
@@ -71,7 +71,7 @@ get_header();
 
 				</aside>
 				<div class="article-wraper">
-					<article class="post" ?>>
+					<article class="post" ?>
 						<h1><?php the_title(); ?></h1>
 
 						<?php the_content(); ?>

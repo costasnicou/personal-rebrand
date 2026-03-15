@@ -1,0 +1,18 @@
+
+@media (min-width:1025px) and (max-width: 1440px){
+
+    .site-header .bottom-header .quota {
+        display: inline-block;
+        color: white;
+        background-color: #ff7f2f;
+        padding: 10px 30px;
+        position: absolute;
+        right: 13%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-15%);
+        font-size: 1.4rem;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: all .3s;
+    }
+}
