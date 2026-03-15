@@ -85,9 +85,13 @@
             opacity: 1;
             visibility: visible;
             display: block;
-            min-height: 350px;
+            height: 350px;
             transition: all 0.5s ease-out;
             padding-top: 50px;
+            width: 100%;
+            box-shadow: 0px 10px 49px 6px rgba(0,0,0,0.14);
+            -webkit-box-shadow: 0px 10px 49px 6px rgba(0,0,0,0.14);
+            -moz-box-shadow: 0px 10px 49px 6px rgba(0,0,0,0.14);
             li{
                  margin-left: 40px;
             }

@@ -87,7 +87,7 @@
 // product link heading color
 .woocommerce ul.products li.product a.woocommerce-loop-product__link:visited,.woocommerce ul.products li.product a.woocommerce-loop-product__link:link {
     display: block;
-    color: darken($color-primary,5%);
+    color: black;
 }
 
 // product heading size
@@ -95,6 +95,7 @@
     padding: .5em 0;
     margin: 0;
     font-size: 1.2em;
+    font-weight: 400;
 }
 
 // showing price
@@ -226,3 +227,29 @@ a.added_to_cart.wc-forward.blink-cart-link {
     }
 }
 
+.product-name a:link, .product-name a:visited{
+    color: black;
+}
+
+
+/*CHECKOUT STYLES----------
+----------------------------*/
+
+// input padding
+.woocommerce form .form-row .input-text, .woocommerce form .form-row select {
+    font-family: inherit;
+    font-weight: 400;
+    letter-spacing: normal;
+    padding: 1em;
+    display: block;
+    background-color: var(--wc-form-color-background, #fff);
+    border: var(--wc-form-border-width) solid var(--wc-form-border-color);
+    border-radius: var(--wc-form-border-radius);
+    color: var(--wc-form-color-text, #000);
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    line-height: normal;
+    height: auto;
+    font-size: 1.25rem;
+}
