@@ -272,3 +272,16 @@ main{
 .main-menu .sub-menu li a:hover {
     background: #f5f5f5;
 }
+
+// GTranslate Plugin
+.gt_switcher_wrapper{
+    position: fixed;
+    top: 68px !important;
+    right: 15px !important;
+    z-index: 999999;
+}
+
+.gt_selector.notranslate{
+    border: 1px solid #ccc;
+    padding: 5px;
+}

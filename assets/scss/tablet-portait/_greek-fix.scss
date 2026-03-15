@@ -1,0 +1,76 @@
+@media (min-width:501px) and (max-width: 768px) {
+
+    html[lang="el"]{
+
+        .site-header .top-header nav {
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            width: 98%;
+            margin: 0 auto;
+            flex-direction: column;
+            padding: 5.5px 0;
+            text-align: center;
+        }
+     
+
+        .site-header .top-header nav > * {
+            margin: 5px 0;
+            font-size: 1.15rem;
+        }
+
+        .site-header .top-header__right .social > *:not(:last-child) {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .cover-video .cover-heading h1 {
+            font-size: 5rem;
+            line-height: 74px;
+        }
+
+        .cover-video .cover-heading h2 {
+            font-size: 4rem;
+            width: 90%;
+            margin: 0 auto;
+            line-height: 74px;
+        }
+
+        .gt_switcher_wrapper {
+            position: fixed;
+            top: 100px !important;
+            right: 44% !important;
+            z-index: 999999;
+        }
+
+        .gt_switcher_wrapper {
+            position: fixed;
+            top: 82px !important;
+            right: 44% !important;
+            z-index: 999999;
+        }
+
+        .fa-brands.fa-linkedin{
+            position: relative;
+            bottom: 3px;
+        }
+
+        .blog-hm__grid .post .post-content .post-btn {
+            margin: 0;
+            align-self: flex-start;
+            width: 90%;
+        }
+
+
+    }
+}
+
+@media (min-width:501px) and (max-width: 761px){
+     html[lang="el"] .gt_switcher_wrapper {
+        position: fixed;
+        top: 99px !important;
+        right: 44% !important;
+        z-index: 999999;
+    }
+}

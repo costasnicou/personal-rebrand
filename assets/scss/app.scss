@@ -1,5 +1,6 @@
 // DESKTOP STYLES
 @import "desktop/global";
+@import "desktop/greek-fix";
 @import "desktop/components";
 @import "desktop/front-page";
 @import "desktop/about-me";
@@ -14,6 +15,7 @@
 @import "mobile/blog";
 @import "mobile/single";
 @import "mobile/shop-global";
+@import "mobile/greek-fix";
 
 // TABLET SMALL PORTAIT 
 @import "tablet-portait/global";
@@ -22,6 +24,7 @@
 @import "tablet-portait/blog";
 @import "tablet-portait/single";
 @import "tablet-portait/shop-global";
+@import "tablet-portait/greek-fix";
 
 // mobile landscape
 @import "mobile-landscape/homepage";
@@ -33,6 +36,7 @@
 @import "desktop-sm/blog";
 @import "desktop-sm/single";
 @import "desktop-sm/shop-global";
+@import "desktop-sm/greek-fix";
 
 // Desktop 1440px
 @import "desktop-lg/global";

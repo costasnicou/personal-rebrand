@@ -157,6 +157,20 @@
         width: 80%;
         margin: 0 auto;
     }
+
+
+    // GTranslate Plugin
+     .gt_switcher_wrapper {
+        position: fixed;
+        top: 85.5px !important;
+        right: 140px !important;
+        z-index: 999999;
+    }
+
+    .gt_selector.notranslate{
+        border: 1px solid #ccc;
+        padding: 5px;
+    }
             
 
 }

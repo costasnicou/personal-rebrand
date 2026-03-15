@@ -26,6 +26,9 @@
         color: white;
     }
 
+   
+
+
     .intro-page-section .intro-page-article h1 {
         text-align: center;
         font-size: 30px;
@@ -46,6 +49,24 @@
     .intro-page-section{
         padding-bottom: 10px;
     }
+
+     .alignright {
+        float: right;
+        /* margin-left: 1.5em; */
+        margin-bottom: 1.5em;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .alignleft {
+        float: left;
+        margin-right: 1.5em;
+        margin-bottom: 1.5em;
+        float: none;
+    }
+
+
 
 
 }

@@ -1,0 +1,126 @@
+@media (min-width:320px) and (max-width: 500px) {
+
+    html[lang="el"]{
+
+
+        .cover-video .cover-heading h1 {
+            font-size: 3rem;
+            margin-top: 10px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .cover-video .cover-heading h2 {
+            font-size: 2.1rem;
+            width: 90%;
+            margin: 0 auto;
+            line-height: 40px;
+        }
+
+        .about-intro__right h4 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 0;
+            width: 100%;
+            line-height: 3rem;
+        }
+
+        .about-intro__right p {
+            font-size: 1.4rem;
+            width: 95%;
+        }
+
+        .services__service {
+            margin: 20px 10px;
+            flex-basis: 290px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #e3eefa;
+            padding: 10px 20px;
+            border-radius: 1.2rem;
+            transition: all .3s;
+        }
+
+
+        .gt_switcher_wrapper {
+            position: fixed;
+            top: 105.5px !important;
+            right: 40% !important;
+            z-index: 999999;
+        }
+
+        .blog-hm__grid .post .post-content .featured-star-btn {
+            align-self: flex-start;
+            width: 85%;
+            text-align: center;
+        }
+
+        .blog-hm__grid .post .post-content .post-btn {
+            margin: 0;
+            align-self: flex-start;
+            width: 85%;
+        }
+
+        .call-to-action {
+            height: 415px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/call-to-action.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+        }
+
+
+        .about-intro__right .benefits li {
+            font-size: 1.6rem;
+            margin: 10px;
+            width: 100%;
+        }
+
+         .about-intro__right h3 {
+            color: #ff7f2f;
+            font-size: 1.6rem;
+            margin-bottom: 0;
+        }
+
+
+        .blog-hm h3 {
+            font-size: 3rem;
+            margin-bottom: 0;
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .about-intro__right h4 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 0;
+            width: 100%;
+            line-height: 3rem;
+        }
+
+        .blog-hm__grid .featured-star .post-content h4 {
+            font-size: 22px;
+            color: #2f9aff;
+        }
+            
+
+
+    }
+}
+
+@media (min-width:480px) and (max-width: 500px){
+    html[lang="el"] .gt_switcher_wrapper {
+        position: fixed;
+        top: 84.5px !important;
+        right: 40% !important;
+        z-index: 999999;
+    }
+}

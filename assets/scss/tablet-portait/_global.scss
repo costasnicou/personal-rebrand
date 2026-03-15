@@ -152,6 +152,19 @@
         background: #f5f5f5;
     }
 
+        // GTranslate Plugin
+    .gt_switcher_wrapper {
+        position: fixed;
+        top: 85px !important;
+        right: 43% !important;
+        z-index: 999999;
+    }
+
+    .gt_selector.notranslate{
+        border: 1px solid #ccc;
+        padding: 5px;
+    }
+
 }
 
 @media (min-width:501px) and (max-width: 761px){

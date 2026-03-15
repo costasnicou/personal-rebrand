@@ -1,0 +1,79 @@
+@media (min-width:769px) and (max-width:916px){
+    html[lang="el"]{
+    
+        .site-header .bottom-header i {
+            
+            display: none;
+        }
+
+        .site-header .bottom-header .quota {
+            display: none;
+        }
+
+
+        .site-header .top-header__left {
+            display: flex;
+            font-size: 1.18rem;
+            align-items: center;
+        }
+
+        .site-header .top-header__right .social > *:not(:last-child) {
+            margin-right: 10px;
+            font-size: 1.19rem;
+        }
+
+        .site-header .menu-wraper .main-menu {
+             display: flex;
+            list-style: none;
+            justify-content: center;
+            margin: 0;
+            height: 80px;
+            background-color: white;
+            padding-left: 0;
+            margin-right: 15px;
+        }
+        .cover-video .cover-heading h1 {
+            font-size: 5.5rem;
+            line-height: 75px;
+        }
+
+        .cover-video .cover-heading h2 {
+            font-size: 4rem;
+            width: 95%;
+            margin: 0 auto;
+            line-height: 60px;
+        }
+
+
+        .blog-hm__grid .post .post-content .post-btn {
+            margin: 0;
+            align-self: flex-start;
+            width: 90%;
+        }
+            
+        .gt_switcher_wrapper {
+            position: fixed;
+            top: 38px !important;
+            right: 15px !important;
+            z-index: 999999;
+        }
+
+        .fa-brands.fa-linkedin{
+            position: relative;
+            bottom: 3px;
+        }
+    
+     
+    }
+}
+
+@media (min-width:917px) and (max-width:1024px){
+  html[lang="el"]{
+        .gt_switcher_wrapper {
+            position: fixed;
+            top: 41px !important;
+            right: 15px !important;
+            z-index: 999999;
+        }
+    }
+}
