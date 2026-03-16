@@ -160,10 +160,11 @@
 
 
     // GTranslate Plugin
-     .gt_switcher_wrapper {
+
+    .gt_switcher_wrapper {
         position: fixed;
-        top: 85.5px !important;
-        right: 140px !important;
+        top: 84.5px !important;
+        right: 40% !important;
         z-index: 999999;
     }
 
@@ -173,4 +174,22 @@
     }
             
 
+}
+
+@media (min-width:320px) and (max-width:345px){
+    .gt_switcher_wrapper {
+        position: fixed;
+        top: 105.5px !important;
+        right: 37% !important;
+        z-index: 999999;
+    }
+}
+
+@media (min-width:480px) and (max-width: 500px){
+    .gt_switcher_wrapper {
+        position: fixed;
+        top: 84.5px !important;
+        right: 40% !important;
+        z-index: 999999;
+    }
 }

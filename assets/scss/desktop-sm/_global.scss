@@ -133,6 +133,12 @@
         // margin-left: 20px;
     }
 
+    .gt_switcher_wrapper {
+        position: fixed;
+        top: 41px !important;
+        right: 15px !important;
+        z-index: 999999;
+    }
 
     html[lang="el"]{
 
