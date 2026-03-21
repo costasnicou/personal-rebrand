@@ -181,3 +181,42 @@
 
 }
 
+@media (min-width:1441px) and (max-width:1587px){
+    html[lang="el"]{
+        .site-header .bottom-header i {
+            font-size: 5rem;
+            color: #ff7f2f;
+            position: absolute;
+            left: 8%;
+            top: 50%;
+            transform: translateY(-50%) translateX(-15%);
+        }
+
+        .main-menu {
+            display: flex;
+            gap: 0;
+        }
+
+        .gt_switcher_wrapper {
+            position: fixed;
+            top: 29px !important;
+            right: 0 !important;
+            z-index: 999999;
+        }
+
+        .site-header .bottom-header .quota {
+            display: inline-block;
+            color: white;
+            background-color: #ff7f2f;
+            padding: 10px 30px;
+            position: absolute;
+            right: 7%;
+            top: 50%;
+            transform: translateY(-50%) translateX(-15%);
+            font-size: 1.4rem;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: all .3s;
+        }
+    }
+}
