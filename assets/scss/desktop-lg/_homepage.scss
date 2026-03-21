@@ -146,6 +146,7 @@
     }
 }
 
+
 @media (min-width:1025px) and (max-width:1181px){
     .site-header .menu-wraper .main-menu .list-item .link-item:link, .site-header .menu-wraper .main-menu .list-item .link-item:visited {
         text-decoration: none;
@@ -531,5 +532,179 @@
         }
 
 
+    }
+}
+
+@media (min-width:1441px) and (max-width:1587px){
+ 
+    .budges {
+        width: 85%;
+        height: 180px;
+        margin: 0 auto;
+        background-color: #ff7f2f;
+        margin-top: -100px;
+        position: relative;
+        z-index: 12;
+        display: flex;
+        flex-basis: 200px;
+        font-size: 1.4rem;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 2px solid #c84d00;
+        box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
+        -webkit-box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
+        -moz-box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
+        text-align: center;
+    }
+
+    .about-intro__wraper {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .about-intro__left .img-sm {
+        width: 270px;
+        height: 250px;
+    }
+
+    .about-intro__left .img-lg {
+        width: 270px;
+        height: 320px;
+    }
+
+    .services__service {
+        margin: 20px 10px;
+        flex-basis: 18%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #e3eefa;
+        padding: 10px 20px;
+        border-radius: 1.2rem;
+        transition: all .3s;
+    }
+
+
+    .blog-hm__grid {
+        display: grid;
+        width: 85%;
+        margin: 4rem auto 4rem auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 180px 180px 180px;
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+        align-items: start;
+        text-align: left;
+    }
+}
+
+
+@media (min-width:1588px) and (max-width:1695px){
+    .budges {
+        width: 80%;
+        height: 180px;
+        margin: 0 auto;
+        background-color: #ff7f2f;
+        margin-top: -100px;
+        position: relative;
+        z-index: 12;
+        display: flex;
+        flex-basis: 200px;
+        font-size: 1.4rem;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 2px solid #c84d00;
+        box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
+        -webkit-box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
+        -moz-box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
+        text-align: center;
+    }
+
+    .about-intro__left .img-lg {
+        width: 230px;
+        height: 320px;
+    }
+
+    .about-intro__left .img-sm {
+        width: 230px;
+        height: 250px;
+    }
+}
+@media (min-width:1025px) and (max-width:1320px){
+
+    .gt_switcher_wrapper {
+        position: fixed;
+        top: 32px !important;
+        right: 0 !important;
+        z-index: 999999;
+    }
+
+    .site-header .top-header nav {
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+    }
+       
+    .main-menu {
+        display: flex;
+        gap: 0;
+    }
+
+    .blog-hm__grid {
+        display: grid;
+        width: 95%;
+        margin: 4rem auto 4rem auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 180px 180px 180px;
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+        align-items: start;
+        text-align: left;
+    }
+
+    .budges {
+        width: 98%;
+        height: 150px;
+        margin: 0 auto;
+        background-color: #ff7f2f;
+        margin-top: -79px;
+        position: relative;
+        z-index: 12;
+        display: flex;
+        flex-basis: 200px;
+        font-size: 1.4rem;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 2px solid #c84d00;
+        box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
+        -webkit-box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
+        -moz-box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
+        text-align: center;
+    }
+
+    .budges .budge .icon-explain--3 p {
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    .budges .budge .icon-explain p span {
+        font-size: 1.5rem;
+        position: relative;
+        bottom: 1rem;
+        line-height: 0px;
+        width: 100%;
     }
 }

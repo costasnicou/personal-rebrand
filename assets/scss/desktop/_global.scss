@@ -277,11 +277,22 @@ main{
 .gt_switcher_wrapper {
     position: fixed;
     top: 68px !important;
-    right: 135px !important;
+    right: 4% !important;
     z-index: 999999;
 }
 
 .gt_selector.notranslate{
     border: 1px solid #ccc;
     padding: 5px;
+}
+
+
+.gt_switcher.notranslate {
+    font-family: Arial;
+    font-size: 12pt;
+    text-align: left;
+    cursor: pointer;
+    overflow: hidden;
+    width: 125px !important;
+    line-height: 0;
 }

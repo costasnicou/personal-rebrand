@@ -116,5 +116,68 @@
 }
 
 
+// GREEK MENU FIX
+@media (min-width:1277px) and (max-width:1329px){
+    html[lang="el"]{
+        .site-header .top-header nav {
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: space-between;
+            width: 95%;
+            margin: 0 auto;
+        }
 
+
+        .site-header .bottom-header i {
+            font-size: 5rem;
+            color: #ff7f2f;
+            position: absolute;
+            left: 5%;
+            top: 50%;
+            transform: translateY(-50%) translateX(-15%);
+        }
+
+        .main-menu {
+            display: flex;
+            gap: 0px;
+        }
+
+        .site-header .menu-wraper .main-menu .list-item .link-item:link, .site-header .menu-wraper .main-menu .list-item .link-item:visited {
+            text-decoration: none;
+            text-transform: capitalize;
+            color: #818181;
+            font-size: 1.8rem;
+            padding: 10px 10px;
+            transition: all .2s;
+            border-radius: 8px;
+        }
+
+        .gt_switcher_wrapper {
+            position: fixed;
+            top: 36px !important;
+            right: 2% !important;
+            z-index: 999999;
+        }
+
+        .site-header .bottom-header .quota {
+            display: inline-block;
+            color: white;
+            background-color: #ff7f2f;
+            padding: 10px 10px;
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%) translateX(-15%);
+            font-size: 1.4rem;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: all .3s;
+        }
+
+
+    }
+
+
+}
 
