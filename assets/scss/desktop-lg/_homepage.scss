@@ -635,6 +635,83 @@
         width: 230px;
         height: 250px;
     }
+
+
+
+
+
+    html[lang="el"]{
+        .budges {
+            width: 90%;
+            height: 180px;
+            margin: 0 auto;
+            background-color: #ff7f2f;
+            margin-top: -100px;
+            position: relative;
+            z-index: 12;
+            display: flex;
+            flex-basis: 200px;
+            font-size: 1.4rem;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            border: 2px solid #c84d00;
+            box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
+            -webkit-box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
+            -moz-box-shadow: -1px 2px 178px -45px rgba(112, 112, 112, 0.86);
+            text-align: center;
+        }
+
+        .main-menu {
+            display: flex;
+            gap: 0;
+        }
+
+        .site-header .menu-wraper .main-menu .list-item .link-item:link, .site-header .menu-wraper .main-menu .list-item .link-item:visited {
+            text-decoration: none;
+            text-transform: capitalize;
+            color: #818181;
+            font-size: 1.8rem;
+            padding: 10px 15px;
+            transition: all .2s;
+            border-radius: 8px;
+        }
+
+        .services__wraper {
+            display: flex;
+            justify-content: center;
+            width: 95%;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .services__service {
+            margin: 20px 10px;
+            flex-basis: 17%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #e3eefa;
+            padding: 10px 20px;
+            border-radius: 1.2rem;
+            transition: all .3s;
+        }
+
+
+        .blog-hm__grid {
+            display: grid;
+            width: 85%;
+            margin: 4rem auto 4rem auto;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 180px 180px 180px;
+            grid-column-gap: 3rem;
+            grid-row-gap: 3rem;
+            align-items: start;
+            text-align: left;
+        }
+    }
 }
 @media (min-width:1025px) and (max-width:1320px){
 
