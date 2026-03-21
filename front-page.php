@@ -280,7 +280,7 @@
 						<h4>Follow Me On:</h4>
 						<div class="social-flex">
 							<a href="https://www.instagram.com/cnicou.tech/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-							<a href="https://www.facebook.com/costas.nicou.3/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+							<a href="https://www.facebook.com/cnicou.tech.services/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
 							<a href="https://www.linkedin.com/in/cnicou/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 						</div>
 					</div>

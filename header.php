@@ -42,7 +42,7 @@
 					<div class="social">
 						<p>Follow Me On: </p>
 						<a href="https://www.instagram.com/cnicou.tech/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-						<a href="https://www.facebook.com/costas.nicou.3/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+						<a href="https://www.facebook.com/cnicou.tech.services/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
 						<a href="https://www.linkedin.com/in/cnicou/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 						
 						
@@ -53,14 +53,7 @@
 		</div>
 		<nav class="bottom-header" >
 			<i class="fa-solid fa-computer brand-logo"></i>
-			<!-- <ul class="main-menu">
-				<li class="list-item"><a href="" class="link-item">Home</a></li>
-				<li class="list-item"><a href="" class="link-item">About Us</a></li>
-				<li class="list-item"><a href="" class="link-item">Service</a></li>
-				<li class="list-item"><a href="" class="link-item">Blog</a></li>
-				<li class="list-item"><a href="" class="link-item">Pages</a></li>
-				<li class="list-item"><a href="" class="link-item">Contact</a></li>
-			</ul> -->
+	
 			<div class="menu-wraper">
 				<label for="toggle">&#9776;</label>
                 <input type="checkbox" name="checkbox" id="toggle">
